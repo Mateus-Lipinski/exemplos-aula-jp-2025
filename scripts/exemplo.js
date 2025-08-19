@@ -1,4 +1,3 @@
-
 //----Muda a cor do H2---//
 const exemploH2 = document.getElementById("exemplo-h2");
 //console.log("element ====>",element);
@@ -54,4 +53,8 @@ document.addEventListener('keydown', (event) => {
 const listaUl = document.querySelector("ul");
 const buttonAdicionar = document.getElementById("adicionarItem");
 
-buttonAdicionar.add
+buttonAdicionar.addEventListener('click', (event) => {
+    let li = document.createElement("li");
+    listaUl.appendChild(li);
+    li.textContent = "Novo Item" + listaUl.children.length
+});

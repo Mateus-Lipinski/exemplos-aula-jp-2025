@@ -50,11 +50,11 @@ document.addEventListener('keydown', (event) => {
 })
 
 //----Desafio----//
-const listaUl = document.querySelector("ul");
-const buttonAdicionar = document.getElementById("adicionarItem");
+const listaUl = document.querySelector("ul"); //Cria uma variável que seleciona a "ul"
+const buttonAdicionar = document.getElementById("adicionarItem"); //Cria uma variável, que é o elemento do ID específico, nesse caso o botão "Adicionar"
 
-buttonAdicionar.addEventListener('click', (event) => {
-    let li = document.createElement("li");
-    listaUl.appendChild(li);
-    li.textContent = "Novo Item" + listaUl.children.length
+buttonAdicionar.addEventListener('click', (event) => { 
+    let li = document.createElement("li"); //Cria um elemento que é um "li" (item da lista)?
+    listaUl.appendChild(li); //Coloca esse item criado no final da "listaUl"
+    li.textContent = "Novo Item " + listaUl.children.length //Fala qual o "texto" + numero; do item da lista
 });
